@@ -1,21 +1,45 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="Enter your description here" />
-    {% block core css %}
+    {% block core_css %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">">
     {% endblock %}
+    <script src="{% static 'js/main.js' %}"></script>
     <title>Indie'd | {% block title %}{% endblock %}</title>
 </head>
 
 <body>
     {% block header %}
+    <nav class="nav navbar-nav">
+        <div class="container-fluid">
+            <div class="row">
+                <div style="margin-left: 25%" class="col">
+                    <form class="form mt-2" method="GET" action="">
+                        <div class="input-group w-50">
+                            <input class="form-control" id="search-bar" type="text" name="q"
+                                placeholder="Search our site">
+    
+                            <div class="input-group-append">
+                                <button class="form-control" type="submit">
+                                    <span class="icon" id="search-button">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
     {% endblock %}
 
     {% block content %}

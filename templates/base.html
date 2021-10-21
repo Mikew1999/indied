@@ -18,42 +18,44 @@
 </head>
 
 <body>
-    {% block header %}
-    <nav class="nav navbar-nav mt-4">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <form class="form mt-2" method="GET" action="">
-                        <div class="input-group">
-                            <input class="form-control" id="search-bar" type="text" name="q"
-                                placeholder="Search our site">
+    <main style="padding-left: 15%; padding-right: 15%;">
+        {% block header %}
+        <nav class="nav navbar-nav mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <form class="form mt-2" method="GET" action="">
+                            <div class="input-group">
+                                <input class="form-control" id="search-bar" type="text" name="q"
+                                    placeholder="Search our site">
 
-                            <div class="input-group-append">
-                                <button class="form-control" style="border-top-right-radius: 15px; border-bottom-right-radius: 15px;" type="submit">
-                                    <span class="icon" id="search-button">
-                                        <i class="fas fa-search"></i>
-                                    </span>
-                                </button>
+                                <div class="input-group-append">
+                                    <button class="form-control" style="border-top-right-radius: 15px; border-bottom-right-radius: 15px;" type="submit">
+                                        <span class="icon" id="search-button">
+                                            <i class="fas fa-search"></i>
+                                        </span>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    {% endblock %}
+        </nav>
+        {% endblock %}
 
-    {% block content %}
-    {% endblock %}
+        {% block content %}
+        {% endblock %}
 
-    {% block footer %}
-    {% endblock %}
+        {% block footer %}
+        {% endblock %}
 
-    {% block core_js %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-    {% endblock %}
+        {% block core_js %}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+        {% endblock %}
+    </main>
 </body>
 
 </html>

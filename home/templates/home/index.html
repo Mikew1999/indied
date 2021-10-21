@@ -4,21 +4,40 @@ Home
 {% endblock %}
 
 {% block content %}
+<div id="settings-arrow">
+    <a href="">
+        <span class="icon">
+            <i class="fas fa-angle-double-right"></i>
+        </span>
+    </a>
+</div>
+
+<div id="messages-arrow">
+    <a href="">
+        <span class="icon">
+            <i class="fas fa-angle-double-left"></i>
+        </span>
+    </a>
+</div>
+
 <div class="container">
     <div class="row">
         <div class="col">
             <ul style="margin-top: 20px;" class="nav nav-pills nav-fill">
                 <li class="nav-item">
-                    <a style="border-right: 1px solid #fff;" class="nav-link btn btn-primary rounded-0" aria-current="page" href="#">item</a>
+                    <a style="border-right: 1px solid #fff;" class="nav-link btn btn-primary rounded-0"
+                        aria-current="page" href="#">item</a>
                 </li>
                 <li class="nav-item">
-                    <a style="border-right: 1px solid #fff;" class="nav-link btn btn-primary rounded-0" href="#">item</a>
+                    <a style="border-right: 1px solid #fff;" class="nav-link btn btn-primary rounded-0"
+                        href="#">item</a>
                 </li>
                 <li class="nav-item">
-                    <a style="border-right: 1px solid #fff;" class="nav-link btn btn-primary rounded-0" href="#">item</a>
+                    <a style="border-right: 1px solid #fff;" class="nav-link btn btn-primary rounded-0"
+                        href="#">item</a>
                 </li>
                 <li class="nav-item">
-                    <a style="border-right: 1px solid #fff;"class="nav-link btn btn-primary rounded-0">item</a>
+                    <a style="border-right: 1px solid #fff;" class="nav-link btn btn-primary rounded-0">item</a>
                 </li>
             </ul>
         </div>
@@ -26,9 +45,9 @@ Home
 </div>
 <div>
     {% if query %}
-        Query: {{ query }}
+    Query: {{ query }}
 
-        Results: {{ results.count }}
+    Results: {{ results.count }}
     {% endif %}
 </div>
 {% endblock %}

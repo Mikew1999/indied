@@ -1,3 +1,4 @@
+/* Search bar */
 #search-bar {
     opacity: 0.95;
     border-top-left-radius: 15px;
@@ -8,4 +9,34 @@
     opacity: 0.95;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+}
+
+/* Settings and messages arrows */
+#messages-arrow {
+    border: 1px solid green;
+    border-right: 0;
+    padding-top: 20px;
+    padding-left: 10px;
+    width: 50px;
+    height: 60px;
+    position: fixed;
+    right: 0;
+    top: 50vh;
+}
+
+#settings-arrow {
+    border: 1px solid green;
+    border-left: 0;
+    padding-top: 20px;
+    padding-left: 10px;
+    width: 50px;
+    height: 60px;
+    position: fixed;
+    left: 0;
+    top: 50vh;
+}
+
+#settings-arrow:hover, #messages-arrow:hover {
+    cursor: pointer;
+    background-color: transparent;
 }
